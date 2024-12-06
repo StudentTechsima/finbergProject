@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finberg</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+<body>
+    <header class="dashboard-header">
+        <div class="logo">
+            <img src="img/h-logo.png" alt="logo" >
+            <span>inberg</span>
+            <a href="">Dashboard</a>
+        </div>
+        <div class="username">
+            <a><span class="single-ltr">U</span><span class="uname">Username</span><span><i class="fa-solid fa-angle-down"></i></span></a>
+        </div>        
+    </header>
+    <section class="market-section" >        
+        <div class="data-point">
+            <h2>Market Sentiments by Option Data Points</h2>
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">18-10-2024 -<br> 15:27:33</th>
+                    <th scope="col">STRENGTH</th>
+                    <th scope="col">CMP</th>
+                    <th scope="col"></i>CHANGE</th>
+                    <th scope="col">VEGA</th>
+                    <th scope="col">THETA</th>
+                    <th scope="col">OI</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">NIFTY</th>
+                    <td>7.54</td>
+                    <td>24,866.45</td>
+                    <td><i class="fa-solid fa-caret-up"></i>16.60</td>
+                    <td>Sideways</td>
+                    <td>Bullish</td>
+                    <td>Bullish</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">BankNifty</th>
+                    <td>7.54</td>
+                    <td>24,866.45</td>
+                    <td><i class="fa-solid fa-caret-up"></i>16.60</td>
+                    <td>Sideways</td>
+                    <td>Bullish</td>
+                    <td>Bullish</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">FinNifty</th>
+                    <td>7.54</td>
+                    <td>24,866.45</td>
+                    <td><i class="fa-solid fa-caret-down"></i>16.60</td>
+                    <td>Sideways</td>
+                    <td>Bullish</td>
+                    <td>Bullish</td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+        <div class="market-logs">
+            <h2>Today’s Market Logs</h2>
+            <div class="market-logs-content">
+                <div class="time-line">
+                    <h6>3:35 pm</h6>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud est.</p>
+                    <h6>3:35 pm</h6>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud est.</p>
+                    <h6>3:35 pm</h6>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud est.</p>
+                    <h6>3:35 pm</h6>
+                </div>                
+            </div>
+        </div>
+    </section>
+    <section class="strength-charts-section">
+        <div class="strength-charts-content">
+            <h2 class="strength-charts-heading">Strength Charts</h2>
+            <ul class="strength-charts-tab">
+                <li><a hrfe="">All</a></li>
+                <li><a hrfe="">Nifty</a></li>
+                <li><a hrfe="">BNF  </a></li>
+                <li><a hrfe="">FinNifty</a></li>
+            </ul>
+        </div>
+        <div class="vega-chart-outer">
+            <div class="nifty-chart">
+                <div class="chart-header">Vega Nifty Chart - BULLISH</span> </div>
+                <div class="chart-container" style="position: relative; height:40vh;">
+                    <canvas id="vegaChart1"></canvas>
+                </div>
+            </div>
+            <div class="nifty-chart nifty-chart2">
+                <div class="chart-header cheader2">Vega Nifty Chart - BULLISH</span> </div>
+                <div class="chart-container"  style="position: relative; height:40vh;">
+                    <canvas id="vegaChart2"></canvas>
+                </div>
+            </div>
+            <div class="nifty-chart nifty-chart3">
+                <div class="chart-header cheader3">Vega Nifty Chart - BULLISH</span> </div>
+                <div class="chart-container"  style="position: relative; height:40vh;">
+                    <canvas id="vegaChart3"></canvas>
+                </div>
+            </div>
+            <div class="nifty-chart nifty-chart4">
+                <div class="chart-header cheader4">Vega Nifty Chart - BULLISH</span> </div>
+                <div class="chart-container"  style="position: relative; height:40vh;">
+                    <canvas id="vegaChart4"></canvas>
+                </div>
+            </div>
+            <div class="nifty-chart nifty-chart5">
+                <div class="chart-header cheader5">Vega Nifty Chart - BULLISH</span> </div>
+                <div class="chart-container"  style="position: relative; height:40vh;">
+                    <canvas id="vegaChart5"></canvas>
+                </div>
+            </div>
+            <div class="nifty-chart nifty-chart6">
+                <div class="chart-header cheader6">Vega Nifty Chart - BULLISH</span> </div>
+                <div class="chart-container"  style="position: relative; height:40vh;">
+                    <canvas id="vegaChart6"></canvas>
+                </div>
+            </div>
+            <div class="nifty-chart nifty-chart7">
+                <div class="chart-header cheader7">Vega Nifty Chart - BULLISH</span> </div>
+                <div class="chart-container"  style="position: relative; height:40vh;">
+                    <canvas id="vegaChart7"></canvas>
+                </div>
+            </div>
+            <div class="nifty-chart nifty-chart8">
+                <div class="chart-header cheader8">Vega Nifty Chart - BULLISH</span> </div>
+                <div class="chart-container"  style="position: relative; height:40vh;">
+                    <canvas id="vegaChart8"></canvas>
+                </div>
+            </div>
+            <div class="nifty-chart nifty-chart9">
+                <div class="chart-header cheader9">Vega Nifty Chart - BULLISH</span> </div>
+                <div class="chart-container"  style="position: relative; height:40vh;">
+                    <canvas id="vegaChart9"></canvas>
+                </div>
+            </div>
+        </div>
+       
+    </section>
+    <footer class="footer">
+        <div class="logo">
+            <img class="logo-img" src="./img/f-logo.png" alt="Logo">
+            <span>inberg</span>
+          </div>
+        <div class="f-right">© 2024 Finberg.com</div>
+       </footer>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+</html>

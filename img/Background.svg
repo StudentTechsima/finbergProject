@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1440" height="821" viewBox="0 0 1440 821">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_6" data-name="Rectangle 6" width="1440" height="821" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="Background" clip-path="url(#clip-path)">
+    <circle id="Ellipse_56" data-name="Ellipse 56" cx="203" cy="203" r="203" transform="translate(1087 -37)" fill="#7c3aed" opacity="0.6"/>
+    <circle id="Ellipse_57" data-name="Ellipse 57" cx="84" cy="84" r="84" transform="translate(829 464)" fill="#1db5be" opacity="0.6"/>
+    <g id="Group_18005" data-name="Group 18005">
+      <path id="Path_1" data-name="Path 1" d="M0,0H1440V572L0,752Z" fill="rgba(242,247,255,0.7)"/>
+    </g>
+    <path id="Path_2" data-name="Path 2" d="M1260,594.005l420-52.517v64l-420,52.517Z" fill="#75e3ea"/>
+    <path id="Path_3" data-name="Path 3" d="M828,584.808,1440,508v64L828,648.808Z" fill="#c4b5fd"/>
+    <path id="Path_4" data-name="Path 4" d="M988,500.517,1408,448v64L988,564.517Z" fill="#ede9fe"/>
+    <path id="Path_5" data-name="Path 5" d="M0,688.016,420,635.5v64L0,752.016Z" fill="#75e3ea"/>
+    <path id="Path_6" data-name="Path 6" d="M-152,771.005l420-52.517v64l-420,52.517Z" fill="#ede9fe"/>
+  </g>
+</svg>
