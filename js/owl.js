@@ -1,36 +1,37 @@
+
 $('.owl-carousel').owlCarousel({
-    stagePadding: 400,
-    loop:true,
-    margin:40,
-    nav:true,
-    autoplay:true,
-    autoplayTimeout:1000,
-    autoplayHoverPause:true,
-    responsive:{
-        0:{
-            items:1,
-            nav:false,
-            margin:0,
-            stagePadding:0,
+    stagePadding: 350, // Reduce stage padding for smaller screens
+    loop: true,
+    margin: 50,
+    nav: true,
+    autoplay: true,
+    autoplayTimeout: 3000, // Increase timeout for better readability
+    autoplayHoverPause: true,
+    responsive: {
+        0: {
+            items: 1,
+            nav: false,
+            margin: 10,
+            stagePadding: 0,
         },
-        600:{
-            items:1,
-            stagePadding: 50,
-            margin:50,
-            nav:false,
+        600: {
+            items: 1,
+            stagePadding: 100,
+            margin: 20,
         },
-        900:{
-            items:1,
+        900: {
+            items: 1,
             stagePadding: 200,
-            margin:20,
+            margin: 30,
         },
-        1200:{
-          items:1,
-          stagePadding: 300,
-          margin:20
-        }
-    }
+        1200: {
+            items: 1,
+            stagePadding: 300,
+            margin: 40,
+        },
+    },
 });
+
 
 function showSidebar(){
     const sidebar = document.querySelector('.sidebar')

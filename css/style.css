@@ -5,7 +5,7 @@
 }
 @font-face {
   font-family: myFont;
-  src: url("../fonts/Essence\ Sans.ttf");
+  src: url("../fonts/Essence_Sans.ttf");
 }
 :root {
   /* Colors: */
@@ -39,7 +39,7 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  font-family: "Jost", sans-serif;
+  font-family: myFontRegular;
 }
 
 /*index page start*/
@@ -55,7 +55,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 56px 88px;
+  padding: 30px 88px;
 }
 
 /* Header */
@@ -90,16 +90,18 @@ font-weight: normal;
 }
 
 .navbar {
-  font-size: 14px;
+  
   display: flex;
   align-items: center;
   gap: 48px;
 }
 
 .navbar a {
+  font-size: 14px;
   text-decoration: none;
   color: #000;
   font-weight: 600;
+  font-family: myFontRegular;
 }
 .sidebar {
   position: fixed;
@@ -107,7 +109,7 @@ font-weight: normal;
   right: 0;
   height: 100vh;
   width: 250px;
-  background: #6a4ef1;
+  background: #7C3AED;
   box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
   list-style: none;
   display: none;
@@ -136,7 +138,7 @@ nav .sidebar a {
   color: #fff;
 }
 @media (max-width: 1024px) {
-  .hideOnMobile {
+  .btn.hideOnMobile, .hideOnMobile {
       display: none;
   }
 }
@@ -150,18 +152,22 @@ nav .sidebar a {
 }
 
 .btn {
-  padding: 10px 20px;
-  background-color: #6a4ef1;
-  font-size: 14px;
+  height:49px;
+  padding: 0px 20px;
+  background-color: #7C3AED;
+  font-size: 16px;
   font-weight: 600;
   color: #ffffff;
   text-decoration: none;
   border-radius: 5px;
+  display: inline-block;
+  text-align: center;
+  line-height: 49px;
   transition: background-color 0.3s;
 }
 
 .btn:hover {
-  background-color: #543ae3;
+  background-color: #7C3AED;
 }
 
 .hero {
@@ -184,6 +190,7 @@ nav .sidebar a {
   color: #000000;
   margin-bottom: 20px;
   line-height: 70px;
+  font-family: myFontRegular;
 }
 
 .hero-text .p {
@@ -191,7 +198,7 @@ nav .sidebar a {
   font-weight: normal;
   letter-spacing: 0px;
   color: #000000;
-  margin-bottom: 22px;
+  padding: 25px 0px;
 }
 
 .hero-image {
@@ -220,11 +227,12 @@ nav .sidebar a {
 .testimonials-heading {
   text-align: center;
   font-size: 48px;
-  font-family:bold;
+  font-weight:bold;
   letter-spacing: 0px;
   color: #000000;
   opacity: 1;
   padding: 40px 0px;
+  font-family: myFontRegular;
 }
 
 .testimonials .item {
@@ -272,6 +280,8 @@ nav .sidebar a {
   font-size: 24px;
   letter-spacing: 0px;
   color: #000000;
+  font-weight: bold;
+  font-family: myFontRegular;
   opacity: 1;
 }
 .item-content {
@@ -479,7 +489,7 @@ input[type="checkbox"]:checked + .accordion-header .arrow {
 
 @media (max-width:1024px){
   .top{
-    padding: 36px 28px;
+    padding: 25px 28px;
   }
   .hero{
     padding: 30px 0px;
@@ -563,7 +573,7 @@ input[type="checkbox"]:checked + .accordion-header .arrow {
     margin: 20px 0px;   
   }
   .top{
-    padding: 26px 18px;
+    padding: 20px 18px;
   }
   .hero{
     padding: 20px 0px;
@@ -865,13 +875,15 @@ input[type="checkbox"]:checked + .accordion-header .arrow {
 .data-point .table thead tr,
 .data-point .table tbody tr {
   border-bottom: 1px solid var(--grey300);
-  height: 44px;
+  height: 60px;
   font-size: 20px;
   text-align: center;
 }
+
 .data-point .table tr th {
   text-align: center;
   font-size: 16px;
+  font-weight: normal;
   color: var(--grey-500-tertiary-text);
 }
 .data-point .table tr th:first-child {
@@ -881,24 +893,65 @@ input[type="checkbox"]:checked + .accordion-header .arrow {
 .data-point .table tr td i{
   font-size: 14px;
 }
+.data-point .table tbody tr th.row{
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--grey900-main-text);
+}
+.data-point .table tbody tr td:nth-child(3){
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--grey900-main-text);
+}
+.data-point .table tbody tr td.warn{
+  color:#C2741B;
+  font-size: 20px;
+  font-weight: 600;
+}
+.data-point .table tbody tr td.success{
+  color:#08B573;
+  font-size: 20px;
+  font-weight: 600;
+}
+.data-point .table tbody tr td.danger{
+  color:#C81012;
+  font-size: 20px;
+  font-weight: 600;
+}
+
 
 .market-logs {
-  min-height: 300px;
+  height: 300px;
   width: 35%;
+  
 }
 .market-logs-content {
+  height: 300px;
   border: 2px solid var(--grey200);
   border-radius: 8px;
   padding: 20px;
+  overflow-y: scroll;
 
 }
+
+.market-logs-content::-webkit-scrollbar {
+  display: none;
+}
+
+.market-logs-content {
+-ms-overflow-style: none; 
+scrollbar-width: none; 
+}
+
 .time-line{
   border-left: 2px solid var(--grey200);
   padding: 0px 0px 0px 10px ;
+  
 }
 .market-logs-content h6 {
   font-size: 12px;
   position: relative;
+
 }
 .market-logs-content h6::before{
   content: '';
@@ -913,6 +966,9 @@ input[type="checkbox"]:checked + .accordion-header .arrow {
 }
 .market-logs-content p {
   font-size: 14px;
+  padding: 10px 0px;
+  font-weight: normal;
+  font-family: myFontRegular;
 }
 
 .market-logs h2 {
